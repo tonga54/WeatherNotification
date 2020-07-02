@@ -9,8 +9,8 @@ import java.util.HashMap;
 public class TwitterService implements INotification{
 
     @Override
-    public HashMap<Object, Object> publishNotification(String message) {
-        HashMap<Object, Object> response = new HashMap<Object,Object>();
+    public HashMap<String, Object> publishNotification(String message) {
+        HashMap<String, Object> response = new HashMap<String,Object>();
         try{
             Twitter twitter = TwitterFactory.getSingleton();
             Status status = twitter.updateStatus(message);

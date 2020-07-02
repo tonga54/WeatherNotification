@@ -14,8 +14,8 @@ import java.util.Map;
 public class NotificationController {
 
     @RequestMapping(value = "/publish", method = RequestMethod.POST)
-    public HashMap<Object, Object> publishTweet(@RequestBody Map<String, String> request){
-        HashMap<Object, Object> response = new HashMap<Object, Object>();
+    public HashMap<String, Object> publishTweet(@RequestBody Map<String, String> request){
+        HashMap<String, Object> response = new HashMap<String, Object>();
 
         if(request.get("service").equals("twitter")){
             INotification notification = new TwitterService();
