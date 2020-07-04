@@ -19,7 +19,7 @@ public class WeatherController {
         HashMap<String, Object> response = new HashMap<>();
         try{
             RestTemplate restTemplate = new RestTemplate();
-            WeatherData[] weatherResult = restTemplate.getForObject("http://dataservice.accuweather.com/currentconditions/v1/349269?apikey=SwD3TiFuolztx02eWc6Bah4ThX0GAiVJ&language=es-ES&details=true", WeatherData[].class);
+            WeatherData[] weatherResult = restTemplate.getForObject("http://dataservice.accuweather.com/currentconditions/v1/349269?apikey=mu9GVXHZz4Hd0TGYGYeavz1QaaWX7qjI&language=es-ES&details=true", WeatherData[].class);
             WeatherData data = weatherResult[0];
             response.put("result", data);
             response.put("error", false);
