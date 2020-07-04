@@ -88,6 +88,7 @@ public class WeatherData implements IMessage {
         message += this.itsRaining ? "No olvides llevar ☂️\n" : "";
         message += this.getWindSpeedMessage();
         message += this.getUvIndexMessage();
+        message += this.getHashTags();
         return message;
     }
 
@@ -127,5 +128,9 @@ public class WeatherData implements IMessage {
         }
 
         return message;
+    }
+
+    private String getHashTags(){
+        return "\n#eltiempo #pronósticodeltiempo #climamvd";
     }
 }
