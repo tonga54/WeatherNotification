@@ -1,4 +1,4 @@
-package weatherNotification.weather.Models;
+package weatherNotification.weather.Model.DTO;
 
 import com.fasterxml.jackson.annotation.JsonAlias;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -102,4 +102,3 @@ public class WeatherData {
         this.wind = (Double) windSpeedMetric.get("Value");
     }
 }
-

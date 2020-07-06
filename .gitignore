@@ -1,4 +1,8 @@
 # twitter properties file
+weather/src/main/resources/application.properties
+notification/src/main/resources/application.properties
+businessLogic/src/main/resources/application.properties
+
 notification/twitter4j.properties
 
 # Compiled class file
